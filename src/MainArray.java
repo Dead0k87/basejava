@@ -11,9 +11,13 @@ public class MainArray {
 
     static {
         for (int i = 0; i < 5; i++) {
-            Resume resume = new Resume();
-            resume.uuid = "A" + i;
-            ARRAY_STORAGE.save(resume);
+            Resume resume1 = new Resume();
+            resume1.uuid = "A" + i;
+            ARRAY_STORAGE.save(resume1);
+
+            Resume resume2 = new Resume();
+            resume2.uuid = "A" + i;
+            ARRAY_STORAGE.save(resume2);
         }
     }
 

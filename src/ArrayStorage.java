@@ -15,23 +15,21 @@ public class ArrayStorage {
         }
     }
 
-    void save(Resume resume) {
-
+    synchronized void save(Resume resume) {
         if (resume != null) {
             int lastIndex = 0;
             for (int i = 0; i < storage.length; i++) {
-                if (storage[i] == resume) {
+                if (resume.equals(storage[i])) { // duplicates check
                     System.out.println("Resume you are trying to add(" + resume + ") is already exist");
-                    break;
+                    return;
                 }
-                if (storage[i] == null) {
+                if (storage[i] == null) { // end of effective list
                     lastIndex = i;
                     break;
                 }
             }
             storage[lastIndex] = resume;
         }
-        System.out.println("Resume storage: " + storage.toString());
     }
 
     Resume get(String uuid) {
