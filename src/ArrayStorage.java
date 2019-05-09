@@ -9,13 +9,13 @@ import java.util.Arrays;
 public class ArrayStorage {
     Resume[] storage = new Resume[10000];
 
-    void clear() {
+    protected void clear() {
         for (int i = 0; i < storage.length; i++) {
             storage[i] = null;
         }
     }
 
-    synchronized void save(Resume resume) {
+    protected synchronized void save(Resume resume) {
         if (resume != null) {
             int lastIndex = 0;
             for (int i = 0; i < storage.length; i++) {
@@ -32,7 +32,7 @@ public class ArrayStorage {
         }
     }
 
-    Resume get(String uuid) {
+    protected Resume get(String uuid) {
         for (int i = 0; i < storage.length; i++) {
             if (storage[i] == null) {
                 break;
@@ -43,8 +43,7 @@ public class ArrayStorage {
         return null;
     }
 
-    void delete(String uuid) {
-
+    protected void delete(String uuid) {
         for (int i = 0; i < storage.length; i++) {
             if (storage[i] == null) {
                 break;
@@ -59,7 +58,7 @@ public class ArrayStorage {
     /**
      * @return array, contains only Resumes in storage (without null)
      */
-    Resume[] getAll() {
+    protected Resume[] getAll() {
         ArrayList<Resume> resumes = new ArrayList<>();
         for (int i = 0; i < storage.length; i++) {
             if (storage[i] != null) {
@@ -69,11 +68,11 @@ public class ArrayStorage {
         return resumes.toArray(new Resume[resumes.size()]);
     }
 
-    int size() {
+    protected int size() {
         int effectiveSize = 0;
         for (int i = 0; i < storage.length; i++) {
             if (storage[i] == null) {
-                effectiveSize = i + 1;
+                effectiveSize = i;
                 break;
             }
         }
