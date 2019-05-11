@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+
 import java.util.Arrays;
 
 /**
@@ -8,32 +8,30 @@ import java.util.Arrays;
  */
 public class ArrayStorage {
     Resume[] storage = new Resume[10000];
+    private int size = 0;
 
-    protected void clear() {
-        for (int i = 0; i < storage.length; i++) {
+    public void clear() {
+        for (int i = 0; i < size; i++) {
             storage[i] = null;
         }
+        size = 0;
     }
 
-    protected synchronized void save(Resume resume) {
+    public void save(Resume resume) {
         if (resume != null) {
-            int lastIndex = 0;
-            for (int i = 0; i < storage.length; i++) {
+            for (int i = 0; i < size; i++) {
                 if (resume.equals(storage[i])) { // duplicates check
-                    System.out.println("Resume you are trying to add(" + resume + ") is already exist");
+                    System.out.println("! Резюме(" + resume + ") уже существует в базе данных и не будет добавлено повторно.");
                     return;
                 }
-                if (storage[i] == null) { // end of effective list
-                    lastIndex = i;
-                    break;
-                }
             }
-            storage[lastIndex] = resume;
+            storage[size] = resume;
+            size++;
         }
     }
 
-    protected Resume get(String uuid) {
-        for (int i = 0; i < storage.length; i++) {
+    public Resume get(String uuid) {
+        for (int i = 0; i < size; i++) {
             if (storage[i] == null) {
                 break;
             } else if (storage[i].uuid.equalsIgnoreCase(uuid)) {
@@ -43,13 +41,14 @@ public class ArrayStorage {
         return null;
     }
 
-    protected void delete(String uuid) {
-        for (int i = 0; i < storage.length; i++) {
+    public void delete(String uuid) {
+        for (int i = 0; i < size; i++) {
             if (storage[i] == null) {
                 break;
             }
             if (storage[i].uuid.equalsIgnoreCase(uuid)) {
                 storage[i] = null;
+                size--;
             }
         }
         storage = Arrays.stream(storage).filter(s -> (s != null)).toArray(Resume[]::new);
@@ -58,24 +57,20 @@ public class ArrayStorage {
     /**
      * @return array, contains only Resumes in storage (without null)
      */
-    protected Resume[] getAll() {
-        ArrayList<Resume> resumes = new ArrayList<>();
-        for (int i = 0; i < storage.length; i++) {
+    public Resume[] getAll() {
+        int newArrayIndex = 0;
+        Resume[] newArray = new Resume[size];
+
+        for (int i = 0; i < size; i++) {
             if (storage[i] != null) {
-                resumes.add(storage[i]);
+                newArray[newArrayIndex] = storage[i];
+                newArrayIndex++;
             }
         }
-        return resumes.toArray(new Resume[resumes.size()]);
+        return newArray;
     }
 
-    protected int size() {
-        int effectiveSize = 0;
-        for (int i = 0; i < storage.length; i++) {
-            if (storage[i] == null) {
-                effectiveSize = i;
-                break;
-            }
-        }
-        return effectiveSize;
+    public int size() {
+        return size;
     }
 }

@@ -37,3 +37,20 @@ public class MainTestArrayStorage {
         }
     }
 }
+//RESULT:
+//Get r1: uuid1
+//Size: 3
+//Get dummy: null
+//
+//Get All
+//uuid1
+//uuid2
+//uuid3
+//
+//Get All
+//uuid2
+//uuid3
+//
+//Get All
+//Size: 0
+

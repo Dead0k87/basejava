@@ -19,10 +19,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ArrayStorage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="256">
+              <caret line="23" column="124" selection-start-line="23" selection-start-column="124" selection-end-line="23" selection-end-column="124" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2333#2334#0" expanded="true" />
+                <element signature="e#2360#2361#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -31,11 +32,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Resume.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            <state relative-caret-position="34">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
               <folding>
-                <element signature="e#141#142#0" expanded="true" />
                 <element signature="e#168#169#0" expanded="true" />
+                <element signature="e#195#196#0" expanded="true" />
                 <element signature="e#486#487#0" expanded="true" />
                 <element signature="e#527#528#0" expanded="true" />
               </folding>
@@ -46,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="41" column="28" lean-forward="true" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="28" />
+            <state relative-caret-position="850">
+              <caret line="52" column="31" lean-forward="true" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -55,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainTestArrayStorage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+            <state relative-caret-position="49">
+              <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -72,6 +73,7 @@
         <option value="$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions" />
         <option value="$PROJECT_DIR$/src/Resume.java" />
         <option value="$PROJECT_DIR$/src/MainArray.java" />
+        <option value="$PROJECT_DIR$/src/MainTestArrayStorage.java" />
         <option value="$PROJECT_DIR$/src/ArrayStorage.java" />
       </list>
     </option>
@@ -88,8 +90,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -106,6 +106,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -162,7 +164,8 @@
       <workItem from="1557252317030" duration="3987000" />
       <workItem from="1557256826770" duration="817000" />
       <workItem from="1557425799191" duration="827000" />
-      <workItem from="1557427092031" duration="1275000" />
+      <workItem from="1557427092031" duration="2477000" />
+      <workItem from="1557601915962" duration="2985000" />
     </task>
     <task id="LOCAL-00001" summary="first commit via Intellij">
       <created>1557257601874</created>
@@ -182,13 +185,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6809000" />
+    <option name="totallyTimeSpent" value="11093000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18137652" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18461539" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -197,7 +200,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6534413" visible="true" weight="0.052447554" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6526316" visible="true" weight="0.31993008" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49959514" weight="0.3986014" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -206,7 +209,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.3465587" side_tool="true" visible="true" weight="0.052447554" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.34736842" side_tool="true" weight="0.31993008" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49878544" weight="0.32867134" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -274,37 +277,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainTestArrayStorage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+        <state relative-caret-position="49">
+          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="52" column="31" lean-forward="true" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Resume.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        <state relative-caret-position="34">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
           <folding>
-            <element signature="e#141#142#0" expanded="true" />
             <element signature="e#168#169#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
             <element signature="e#486#487#0" expanded="true" />
             <element signature="e#527#528#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="41" column="28" lean-forward="true" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ArrayStorage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="256">
+          <caret line="23" column="124" selection-start-line="23" selection-start-column="124" selection-end-line="23" selection-end-column="124" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2333#2334#0" expanded="true" />
+            <element signature="e#2360#2361#0" expanded="true" />
           </folding>
         </state>
       </provider>
