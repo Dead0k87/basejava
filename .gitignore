@@ -1,5 +1,8 @@
 # class files
-out/production/basejava/
+out/*
 
 #IDEA settings
 .idea/
+
+# git rm -r --cached .idea
+#git rm -r --cached out
