@@ -32,9 +32,7 @@ public class ArrayStorage {
 
     public Resume get(String uuid) {
         for (int i = 0; i < size; i++) {
-            if (storage[i] == null) {
-                break;
-            } else if (storage[i].uuid.equalsIgnoreCase(uuid)) {
+            if (storage[i].uuid.equalsIgnoreCase(uuid)) {
                 return storage[i];
             }
         }
@@ -43,9 +41,7 @@ public class ArrayStorage {
 
     public void delete(String uuid) {
         for (int i = 0; i < size; i++) {
-            if (storage[i] == null) {
-                break;
-            }
+
             if (storage[i].uuid.equalsIgnoreCase(uuid)) {
                 storage[i] = null;
                 size--;
@@ -60,14 +56,14 @@ public class ArrayStorage {
     public Resume[] getAll() {
         int newArrayIndex = 0;
         Resume[] newArray = new Resume[size];
-
         for (int i = 0; i < size; i++) {
-            if (storage[i] != null) {
-                newArray[newArrayIndex] = storage[i];
-                newArrayIndex++;
-            }
+            //if (storage[i] != null) {
+            newArray[newArrayIndex] = storage[i];
+            newArrayIndex++;
+            //}
         }
         return newArray;
+
     }
 
     public int size() {
